@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>nylon-tag demo</title>
+
+    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+
+    <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
+    <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
+    <link rel="import" href="../nylon-tag-input.html">
+    <link rel="import" href="../nylon-tag.html">
+    <!--<link rel="import" href="../tag-module.html">-->
+    <link rel="import" href="./../nylon-tag-dropdown.html">
+    
+
+    <style is="custom-style" include="demo-pages-shared-styles">
+    </style>
+  </head>
+  <body>
+    <div class="vertical-section-container centered">
+      <h3>Basic nylon-tag demo</h3>
+      <demo-snippet>
+        <template>
+          <nylon-tag label="test" color="#ddd"></nylon-tag>
+        </template>
+      </demo-snippet>
+      <demo-snippet>
+        <template>
+          <nylon-tag-dropdown id="combobox"></nylon-tag-dropdown>
+          <script>
+             window.addEventListener('WebComponentsReady', function() {
+               var arr = [
+                 {
+                   name : 'name1',
+                   id: '1'
+                 },
+                {
+                   name : 'name2',
+                   id: '2'
+                 },
+               ]
+                var combobox1 = document.querySelector('#combobox').items = arr;
+              });
+          </script>
+        </template>
+      </demo-snippet>
+      <demo-snippet>
+        <template>
+          <nylon-tag-input></nylon-tag-input>
+        </template>
+      </demo-snippet>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<link rel="import" href="../polymer/polymer.html">
+<dom-module id="nylon-tag">
+    <template>
+        <style>
+            :host {
+                font-size: var(--font-size);
+                font-weight: bold;
+                padding: 2px 10px 2px 10px;
+                color: white;
+                border-radius: 4px;
+                background-color: var(--background-color);
+            }
+        </style>
+        [[label]]
+    </template>
+    <script>
+        Polymer({
+            is: 'nylon-tag',
+            properties:{
+                color:{
+                    value:'#CCCCCC',
+                    observer:'_obColor'
+                },
+                size:{
+                    value:'16px',
+                    observer:'_obSize'
+                }
+            },
+            _obColor:function(color){
+                this.customStyle['--background-color'] = color;
+                this.updateStyles();
+            },
+            _obSize:function(size){
+                this.customStyle['--font-size'] = size;
+                this.updateStyles();
+            }
+        });
+    </script>
+</dom-module>
