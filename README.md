@@ -19,3 +19,5 @@ bower install nylon-tag --save
 ```
 -->
 ```html
+  <nylon-tag label="test" color="#ddd"></nylon-tag>
+```
