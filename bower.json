@@ -1,6 +1,9 @@
 {
   "name": "nylon-tag",
   "main": "nylon-tag.html",
+  "authors":[
+    "NEXT CORP CO.,LTD."
+  ],
   "dependencies": {
     "polymer": "Polymer/polymer#^1.9.0"
   },
