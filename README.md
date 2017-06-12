@@ -8,9 +8,12 @@ bower install nylon-tag --save
 ```
 <custom-element-demo>
   <template>
-    <script src="../webcomponentsjs/webcomponents-lite.js"></script>
+    <script src="../webcomponentsjs/webcomponents-loader.js"></script>
+
+    <link rel="import" href="../iron-demo-helpers/demo-pages-shared-styles.html">
+    <link rel="import" href="../iron-demo-helpers/demo-snippet.html">
+    
     <link rel="import" href="nylon-tag.html">
-     <nylon-tag label="test" color="#ddd"></nylon-tag>
   </template>
 </custom-element-demo>
 ```
