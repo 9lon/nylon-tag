@@ -14,5 +14,8 @@
     "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0",
     "gl-form": "glon-gl-form#^0.4.0",
     "iron-a11y-keys": "PolymerElements/iron-a11y-keys#^1.0.6"
-  }
+  },
+  "demos": {
+      "Demo": "demo/index.html"
+  },
 }
